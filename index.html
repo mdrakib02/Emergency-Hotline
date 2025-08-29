@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Services</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/cdda835583.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Sections -->
+    <nav class="bg-[#b5b5b540]">
+      <div
+        class="container mx-auto py-3 px-2 md:px-3 flex justify-between items-center"
+      >
+        <!--  -->
+        <div class="flex gap-4 items-center">
+          <img class="max-w-16" src="./assets//logo.png" alt="" />
+          <h2 class="text-xl font-bold text-[#006747]">
+            Emergency <br />
+            Services
+          </h2>
+        </div>
+        <!--  -->
+        <div class="flex gap-x-3 items-center">
+          <div
+            class="bg-[#41ff6b1a] rounded-full text-black px-8 py-3 flex items-center gap-2"
+          >
+            <p class="text-md font-bold">100</p>
+            <img class="w-6" src="./assets/heart.png" alt="" />
+          </div>
+          <div
+            class="bg-[#41ff6b1a] rounded-full text-black px-8 py-3 flex items-center gap-2"
+          >
+            <p class="text-xl font-bold">0</p>
+            <img class="w-6" src="./assets/coin.png" alt="" />
+          </div>
+          <div class="bg-[#00a63e] hover:bg-[#078035] rounded-full text-white px-8 py-3">
+            <button class="text-md font-bold cursor-pointer">
+              <span>0</span> Copy
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Sections -->
+    <section
+      class="bg-[linear-gradient(90deg,rgba(1,49,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)]"
+    >
+      <div class="container mx-auto text-center py-5">
+        <img class="w-24 mx-auto" src="./assets//logo-dark.png" alt="" />
+        <h1 class="text-2xl font-bold text-white">
+          Emergency Service Directory
+        </h1>
+        <p class="text-base font-normal text-white pt-4">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+    </section>
+
+    <!-- Card Sections -->
+    <section class="bg-[#f5fff6]">
+      <div
+        class="container grid grid-cols-12 mx-auto border-red-100 border-1 gap-7"
+      >
+        <!-- Card Design Sections -->
+        <div
+          class="col-span-9 border-2 border-red-400 grid grid-cols-3 gap-6 py-12"
+        >
+          <div class="bg-white p-4 rounded-xl border-[1px] border-gray-200">
+            <div class="flex justify-between items-center pb-4">
+              <img
+                class="w-[32px]"
+                src="./assets//fire-service.png"
+                alt=""
+              /><img class="w-[24px]" src="./assets//heart.png" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">Fire Service Number</h3>
+            <p>Free Service</p>
+            <h4 class="text-2xl font-bold pt-5">999</h4>
+            <button class="btn btn-xs">Fire</button>
+
+            <div class="flex justify-between items-center gap-6 mt-6">
+              <button class="btn w-1/2">
+                <i class="fa-solid fa-copy"></i> Copy
+              </button>
+              <button
+                class="w-1/2 rounded-[4px] border-none cursor-pointer hover:bg-[#078035] bg-[#00a63e] px-4 py-2 text-white"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- History Sections -->
+        <div class="col-span-3 border-2 border-red-400  py-12">
+          <div class="bg-white p-6 rounded-xl border-[1px]  border-gray-200">
+            <div class="flex justify-between items-center">
+              <p class="text-base font-bold"> <i class="fa-solid fa-alarm-clock pr-6"></i>Call History</p>
+              <button class="rounded-full cursor-pointer bg-[#00a63e] hover:bg-[#078035] px-5 py-2 text-white">
+
+                Clear
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
