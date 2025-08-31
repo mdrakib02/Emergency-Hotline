@@ -34,18 +34,20 @@
           <div
             class="bg-[#41ff6b1a] rounded-full text-black px-8 py-3 flex items-center gap-2"
           >
-            <p class="text-md font-bold">100</p>
+            <p id="heart-number" class="text-md font-bold">100</p>
             <img class="w-6" src="./assets/heart.png" alt="" />
           </div>
           <div
             class="bg-[#41ff6b1a] rounded-full text-black px-8 py-3 flex items-center gap-2"
           >
-            <p class="text-xl font-bold">0</p>
+            <p id="coins" class="text-xl font-bold">100</p>
             <img class="w-6" src="./assets/coin.png" alt="" />
           </div>
-          <div class="bg-[#00a63e] hover:bg-[#078035] rounded-full text-white px-8 py-3">
+          <div
+            class="bg-[#00a63e] hover:bg-[#078035] rounded-full text-white px-8 py-3"
+          >
             <button class="text-md font-bold cursor-pointer">
-              <span>0</span> Copy
+              <span id="copy-number">0</span> Copy
             </button>
           </div>
         </div>
@@ -70,23 +72,56 @@
 
     <!-- Card Sections -->
     <section class="bg-[#f5fff6]">
-      <div
-        class="container grid grid-cols-12 mx-auto border-red-100 border-1 gap-7"
-      >
+      <div class="container grid grid-cols-12 mx-auto gap-7">
         <!-- Card Design Sections -->
-        <div
-          class="col-span-9 border-2 border-red-400 grid grid-cols-3 gap-6 py-12"
-        >
-          <div class="bg-white p-4 rounded-xl border-[1px] border-gray-200">
+        <div class="col-span-9 grid grid-cols-3 gap-6 py-12">
+          <!-- Card One -->
+          <div
+            class="bg-white p-4 rounded-xl border-[1px] border-gray-200 h-[280px]"
+          >
+            <div class="flex justify-between items-center pb-4">
+              <img class="w-[32px]" src="./assets/emergency.png" alt="" /><img id=""
+                class="heart w-[38px] cursor-pointer hover:bg-gray-100 rounded-full p-2"
+                src="./assets//heart.png"
+                alt=""
+              />
+            </div>
+            <h3 id="call-title" class="text-xl font-bold">
+              National Emergency Number
+            </h3>
+            <p>National Emergency</p>
+            <h4  class="text-2xl font-bold pt-5">999</h4>
+            <button class="btn btn-xs">Fire</button>
+
+            <div class="flex justify-between items-center gap-6 mt-6">
+              <button class="copy-btn btn w-1/2">
+                <i class=" fa-solid fa-copy"></i> Copy
+              </button>
+              <button
+                id="call-btn"
+                class="call-Btn w-1/2 rounded-[4px] border-none cursor-pointer hover:bg-[#078035] bg-[#00a63e] px-4 py-2 text-white"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+          <!-- Card No Two -->
+          <div
+            class="bg-white p-4 rounded-xl border-[1px] border-gray-200 h-[280px]"
+          >
             <div class="flex justify-between items-center pb-4">
               <img
                 class="w-[32px]"
-                src="./assets//fire-service.png"
+                src="./assets/fire-service.png"
                 alt=""
-              /><img class="w-[24px]" src="./assets//heart.png" alt="" />
+              /><img
+                class="w-[38px] cursor-pointer hover:bg-gray-100 rounded-full p-2"
+                src="./assets//heart.png"
+                alt=""
+              />
             </div>
-            <h3 class="text-xl font-bold">Fire Service Number</h3>
-            <p>Free Service</p>
+            <h3 id="call-title" class="text-xl font-bold">Fire Services</h3>
+            <p>Fire Service</p>
             <h4 class="text-2xl font-bold pt-5">999</h4>
             <button class="btn btn-xs">Fire</button>
 
@@ -95,7 +130,67 @@
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="w-1/2 rounded-[4px] border-none cursor-pointer hover:bg-[#078035] bg-[#00a63e] px-4 py-2 text-white"
+                id="call-btn"
+                class="call-Btn w-1/2 rounded-[4px] border-none cursor-pointer hover:bg-[#078035] bg-[#00a63e] px-4 py-2 text-white"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+
+          <!-- CArt No Three -->
+          <div
+            class="bg-white p-4 rounded-xl border-[1px] border-gray-200 h-[280px]"
+          >
+            <div class="flex justify-between items-center pb-4">
+              <img class="w-[32px]" src="./assets/police.png" alt="" /><img
+                class="w-[38px] cursor-pointer hover:bg-gray-100 rounded-full p-2"
+                src="./assets//heart.png"
+                alt=""
+              />
+            </div>
+            <h3 id="call-title" class="text-xl font-bold">
+              Police Helpline Number
+            </h3>
+            <p>Police</p>
+            <h4 class="text-2xl font-bold pt-5">999</h4>
+            <button class="btn btn-xs">Fire</button>
+
+            <div class="flex justify-between items-center gap-6 mt-6">
+              <button class="btn w-1/2">
+                <i class="fa-solid fa-copy"></i> Copy
+              </button>
+              <button
+                id="call-btn"
+                class="call-Btn w-1/2 rounded-[4px] border-none cursor-pointer hover:bg-[#078035] bg-[#00a63e] px-4 py-2 text-white"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+          <!-- CArt No Four -->
+          <div
+            class="bg-white p-4 rounded-xl border-[1px] border-gray-200 h-[280px]"
+          >
+            <div class="flex justify-between items-center pb-4">
+              <img class="w-[32px]" src="./assets/ambulance.png" alt="" /><img
+                class="w-[38px] cursor-pointer hover:bg-gray-100 rounded-full p-2"
+                src="./assets//heart.png"
+                alt=""
+              />
+            </div>
+            <h3 id="call-title" class="text-xl font-bold">Ambulance Number</h3>
+            <p>Ambulance</p>
+            <h4 class="text-2xl font-bold pt-5">1994-99999</h4>
+            <button class="btn btn-xs">Fire</button>
+
+            <div class="flex justify-between items-center gap-6 mt-6">
+              <button class="btn w-1/2">
+                <i class="fa-solid fa-copy"></i> Copy
+              </button>
+              <button
+                id="call-btn"
+                class="call-Btn w-1/2 rounded-[4px] border-none cursor-pointer hover:bg-[#078035] bg-[#00a63e] px-4 py-2 text-white"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -104,18 +199,25 @@
         </div>
 
         <!-- History Sections -->
-        <div class="col-span-3 border-2 border-red-400  py-12">
-          <div class="bg-white p-6 rounded-xl border-[1px]  border-gray-200">
-            <div class="flex justify-between items-center">
-              <p class="text-base font-bold"> <i class="fa-solid fa-alarm-clock pr-6"></i>Call History</p>
-              <button class="rounded-full cursor-pointer bg-[#00a63e] hover:bg-[#078035] px-5 py-2 text-white">
-
+        <div class="col-span-3 py-12">
+          <div class="bg-white p-6 rounded-xl border-[1px] border-gray-200">
+            <div class="flex justify-between items-center pb-6">
+              <p class="text-base font-bold">
+                <i class="fa-solid fa-alarm-clock pr-6"></i>Call History
+              </p>
+              <button id="clear-btn"
+                class="rounded-full cursor-pointer bg-[#00a63e] hover:bg-[#078035] px-5 py-2 text-white"
+              >
                 Clear
               </button>
             </div>
+            <div id="Cart-Box" class="flex flex-col gap-y-3"></div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Script File  -->
+    <script src="./index.js"></script>
   </body>
 </html>
