@@ -19,12 +19,12 @@
     <!-- Header Sections -->
     <nav class="bg-[#b5b5b540]">
       <div
-        class="container mx-auto py-3 px-2 md:px-3 flex justify-between items-center"
+        class="container mx-auto py-3 px-4 flex justify-between items-center"
       >
         <!--  -->
         <div class="flex gap-4 items-center">
-          <img class="max-w-16" src="./assets//logo.png" alt="" />
-          <h2 class="text-xl font-bold text-[#006747]">
+          <img class="max-w-16 " src="./assets//logo.png" alt="" />
+          <h2 class="text-xl hidden md:block font-bold text-[#006747]">
             Emergency <br />
             Services
           </h2>
@@ -32,9 +32,9 @@
         <!--  -->
         <div class="flex gap-x-3 items-center">
           <div
-            class="bg-[#41ff6b1a] rounded-full text-black px-8 py-3 flex items-center gap-2"
+            class="bg-[#41ff6b1a] hidden md:block  rounded-full text-black px-8 py-3 lg:flex items-center gap-2"
           >
-            <p id="heart-number" class="text-md font-bold">100</p>
+            <p id="heart-number" class="text-md font-bold ">100</p>
             <img class="w-6" src="./assets/heart.png" alt="" />
           </div>
           <div
@@ -58,7 +58,7 @@
     <section
       class="bg-[linear-gradient(90deg,rgba(1,49,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)]"
     >
-      <div class="container mx-auto text-center py-5">
+      <div class="container mx-auto text-center py-5 px-4">
         <img class="w-24 mx-auto" src="./assets//logo-dark.png" alt="" />
         <h1 class="text-2xl font-bold text-white">
           Emergency Service Directory
@@ -74,13 +74,14 @@
     <section class="bg-[#f5fff6]">
       <div class="container grid grid-cols-12 mx-auto gap-7">
         <!-- Card Design Sections -->
-        <div class="col-span-9 grid grid-cols-3 gap-6 py-12">
+        <div class="col-span-12 lg:col-span-9 grid grid-cols-1 lg:grid-cols-3 gap-6 py-12 px-4 ">
           <!-- Card One -->
           <div
             class="bg-white p-4 rounded-xl border-[1px] border-gray-200 h-[280px]"
           >
             <div class="flex justify-between items-center pb-4">
-              <img class="w-[32px]" src="./assets/emergency.png" alt="" /><img id=""
+              <img class="w-[32px]" src="./assets/emergency.png" alt="" /><img
+                id=""
                 class="heart w-[38px] cursor-pointer hover:bg-gray-100 rounded-full p-2"
                 src="./assets//heart.png"
                 alt=""
@@ -90,12 +91,12 @@
               National Emergency Number
             </h3>
             <p>National Emergency</p>
-            <h4  class="text-2xl font-bold pt-5">999</h4>
+            <h4 class="text-2xl font-bold pt-5">999</h4>
             <button class="btn btn-xs">Fire</button>
 
             <div class="flex justify-between items-center gap-6 mt-6">
               <button class="copy-btn btn w-1/2">
-                <i class=" fa-solid fa-copy"></i> Copy
+                <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
                 id="call-btn"
@@ -110,23 +111,22 @@
             class="bg-white p-4 rounded-xl border-[1px] border-gray-200 h-[280px]"
           >
             <div class="flex justify-between items-center pb-4">
-              <img
-                class="w-[32px]"
-                src="./assets/fire-service.png"
-                alt=""
-              /><img
-                class="w-[38px] cursor-pointer hover:bg-gray-100 rounded-full p-2"
+              <img class="w-[32px]" src="./assets/emergency.png" alt="" /><img
+                id=""
+                class="heart w-[38px] cursor-pointer hover:bg-gray-100 rounded-full p-2"
                 src="./assets//heart.png"
                 alt=""
               />
             </div>
-            <h3 id="call-title" class="text-xl font-bold">Fire Services</h3>
-            <p>Fire Service</p>
+            <h3 id="call-title" class="text-xl font-bold">
+              National Emergency Number
+            </h3>
+            <p>National Emergency</p>
             <h4 class="text-2xl font-bold pt-5">999</h4>
             <button class="btn btn-xs">Fire</button>
 
             <div class="flex justify-between items-center gap-6 mt-6">
-              <button class="btn w-1/2">
+              <button class="copy-btn btn w-1/2">
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
@@ -143,21 +143,22 @@
             class="bg-white p-4 rounded-xl border-[1px] border-gray-200 h-[280px]"
           >
             <div class="flex justify-between items-center pb-4">
-              <img class="w-[32px]" src="./assets/police.png" alt="" /><img
-                class="w-[38px] cursor-pointer hover:bg-gray-100 rounded-full p-2"
+              <img class="w-[32px]" src="./assets/emergency.png" alt="" /><img
+                id=""
+                class="heart w-[38px] cursor-pointer hover:bg-gray-100 rounded-full p-2"
                 src="./assets//heart.png"
                 alt=""
               />
             </div>
             <h3 id="call-title" class="text-xl font-bold">
-              Police Helpline Number
+              National Emergency Number
             </h3>
-            <p>Police</p>
+            <p>National Emergency</p>
             <h4 class="text-2xl font-bold pt-5">999</h4>
             <button class="btn btn-xs">Fire</button>
 
             <div class="flex justify-between items-center gap-6 mt-6">
-              <button class="btn w-1/2">
+              <button class="copy-btn btn w-1/2">
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
@@ -173,19 +174,84 @@
             class="bg-white p-4 rounded-xl border-[1px] border-gray-200 h-[280px]"
           >
             <div class="flex justify-between items-center pb-4">
-              <img class="w-[32px]" src="./assets/ambulance.png" alt="" /><img
-                class="w-[38px] cursor-pointer hover:bg-gray-100 rounded-full p-2"
+              <img class="w-[32px]" src="./assets/emergency.png" alt="" /><img
+                id=""
+                class="heart w-[38px] cursor-pointer hover:bg-gray-100 rounded-full p-2"
                 src="./assets//heart.png"
                 alt=""
               />
             </div>
-            <h3 id="call-title" class="text-xl font-bold">Ambulance Number</h3>
-            <p>Ambulance</p>
-            <h4 class="text-2xl font-bold pt-5">1994-99999</h4>
+            <h3 id="call-title" class="text-xl font-bold">
+              National Emergency Number
+            </h3>
+            <p>National Emergency</p>
+            <h4 class="text-2xl font-bold pt-5">999</h4>
             <button class="btn btn-xs">Fire</button>
 
             <div class="flex justify-between items-center gap-6 mt-6">
-              <button class="btn w-1/2">
+              <button class="copy-btn btn w-1/2">
+                <i class="fa-solid fa-copy"></i> Copy
+              </button>
+              <button
+                id="call-btn"
+                class="call-Btn w-1/2 rounded-[4px] border-none cursor-pointer hover:bg-[#078035] bg-[#00a63e] px-4 py-2 text-white"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+          <!-- Card Five -->
+          <div
+            class="bg-white p-4 rounded-xl border-[1px] border-gray-200 h-[280px]"
+          >
+            <div class="flex justify-between items-center pb-4">
+              <img class="w-[32px]" src="./assets/emergency.png" alt="" /><img
+                id=""
+                class="heart w-[38px] cursor-pointer hover:bg-gray-100 rounded-full p-2"
+                src="./assets//heart.png"
+                alt=""
+              />
+            </div>
+            <h3 id="call-title" class="text-xl font-bold">
+              National Emergency Number
+            </h3>
+            <p>National Emergency</p>
+            <h4 class="text-2xl font-bold pt-5">999</h4>
+            <button class="btn btn-xs">Fire</button>
+
+            <div class="flex justify-between items-center gap-6 mt-6">
+              <button class="copy-btn btn w-1/2">
+                <i class="fa-solid fa-copy"></i> Copy
+              </button>
+              <button
+                id="call-btn"
+                class="call-Btn w-1/2 rounded-[4px] border-none cursor-pointer hover:bg-[#078035] bg-[#00a63e] px-4 py-2 text-white"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+          <!-- Card Six -->
+          <div
+            class="bg-white p-4 rounded-xl border-[1px] border-gray-200 h-[280px]"
+          >
+            <div class="flex justify-between items-center pb-4">
+              <img class="w-[32px]" src="./assets/emergency.png" alt="" /><img
+                id=""
+                class="heart w-[38px] cursor-pointer hover:bg-gray-100 rounded-full p-2"
+                src="./assets//heart.png"
+                alt=""
+              />
+            </div>
+            <h3 id="call-title" class="text-xl font-bold">
+              National Emergency Number
+            </h3>
+            <p>National Emergency</p>
+            <h4 class="text-2xl font-bold pt-5">999</h4>
+            <button class="btn btn-xs">Fire</button>
+
+            <div class="flex justify-between items-center gap-6 mt-6">
+              <button class="copy-btn btn w-1/2">
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
@@ -199,13 +265,14 @@
         </div>
 
         <!-- History Sections -->
-        <div class="col-span-3 py-12">
+        <div class="col-span-12 lg:col-span-3 py-12 px-4">
           <div class="bg-white p-6 rounded-xl border-[1px] border-gray-200">
             <div class="flex justify-between items-center pb-6">
               <p class="text-base font-bold">
                 <i class="fa-solid fa-alarm-clock pr-6"></i>Call History
               </p>
-              <button id="clear-btn"
+              <button
+                id="clear-btn"
                 class="rounded-full cursor-pointer bg-[#00a63e] hover:bg-[#078035] px-5 py-2 text-white"
               >
                 Clear

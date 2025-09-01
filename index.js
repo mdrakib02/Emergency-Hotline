@@ -87,4 +87,6 @@ for (let heartCount of heartCounts) {
 getElementID("clear-btn").addEventListener("click", function () {
   const clearButton = getElementID("Cart-Box");
   clearButton.innerHTML = "";
+
+  getElementID("coins").innerText = 100
 });
